@@ -1,0 +1,17 @@
+<div data-role="page" id="signin_page">
+	<div data-role="content">
+		<%= form_for(:session, :url => sessions_path) do |f| %>
+		  <div class="field">
+			<%= f.label :username, "Student ID" %>
+			<%= f.text_field :username  %>
+		  </div>
+		  <div class="field">
+			<%= f.label :password %>
+			<%= f.password_field :password %>
+		  </div>
+		  <div class="actions" id="submit">
+			<%= f.submit "Sign In" %>
+		  </div>
+		<% end %>
+	</div>
+</div>
